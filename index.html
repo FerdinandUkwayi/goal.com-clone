@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <title>Football News, Live Scores, Results and Transfer</title>
     <link href="CSS/styles.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="header">
-        <div id="logo"><img src="images/logo.PNG"></div>
-        <div id="navContainer" >
+        <div id="logo"><img src="./images/logo.PNG"></div>
+        <div id="navContainer">
             <button type="button" id="liveScore">LIVE SCORES</button>
             <span style="font-size: 30px; cursor: pointer; color:whitesmoke;" id="openNav">&#9776</span>
         </div>
-        
+
         <nav id="myLinks">
             <div class="hamburger-menu-toggle">
                 <span class="close">×</span>
@@ -30,29 +32,30 @@
                 </ul>
             </div>
         </nav>
-            <div class=" socialLinksContainer">
-                <div class="socialLinks facebook">
-                    <img src="images/facebook.PNG" alt="Facebook logo">
-                </div>
-                <div class="socialLinks twitter">
-                    <img src="images/twitter.PNG" alt="Twitter logo">
-                </div>
-                <div class="socialLinks instagram">
-                    <img src="images/instagram.PNG" alt="Instagram logo">
-                </div>
-                <div class="socialLinks youtube">
-                    <img src="images/youtube.PNG" alt="Youtube logo">
-                </div>
-                <div class="socialLinks lang">
-                    <img src="images/nig_flag.PNG" alt="Nigeria flag">
-                    <span id="lang" style="color: white; font-size: 18px;">English</span>
-                </div>
+        <div class="socialLinksContainer">
+            <div class="socialLinks facebook">
+                <a href=""><img src="./images/facebook.PNG" alt="Facebook logo"></a>
             </div>
+            <div class="socialLinks twitter">
+                <a href=""><img src="./images/twitter.PNG" alt="Twitter logo"></a>
+            </div>
+            <div class="socialLinks instagram">
+                <a href=""><img src="./images/instagram.PNG" alt="Instagram logo"></a>
+            </div>
+            <div class="socialLinks youtube">
+                <a href=""><img src="./images/youtube.PNG" alt="Youtube logo"></a>
+            </div>
+            <div class="socialLinks lang">
+                <a href=""><img src="./images/nig_flag.PNG" alt="Nigeria flag"></a>
+                <a href=""><span id="lang" style="color: white; font-size: 18px;">English</span></a>
+            </div>
+        </div>
     </div>
     <main id="main">
         <div id="headerAd">
-            <img src="images/hp.PNG" alt="HP ad">
+            <a href="#"><img src="./images/hp.PNG" alt="HP ad"></a>
         </div>
+
         <div>
             <div class="footballNews">FOOTBALL NEWS</div>
         </div>
@@ -61,163 +64,230 @@
             <button type="button" id="latestNews">LATEST NEWS</button>
             <button type="button" id="todaysMatches">TODAY'S MATCHES</button>
         </div>
+
         <div class="topStories">
-            <!-- storyCard1 -->
-            <div id="storyCard1">
-                <div class="storyCard1-img">
-                    <img src="images/bruno_mutd.PNG" alt="Bruno Albes of Manchester United" id="main-img">
+            <!-- Story Card 1 -->
+            <div class="storyCard" id="storyCard1">
+                <a href="">
+                    <div class="storyCard-img" id="storyCard1-img">
+                        <img src="./images/1 (1).jpg" alt="Bruno Albes of Manchester United"
+                            class="storyCardImages" id="main-img">
+                </a>
+                <span class="triangle" id="storyCard1-triangle">
+            </div></a>
+            <a href="">
+                <div class="storyCard-desc" id="storyCard1-desc">
+                    <h3 id="card1-Desc">Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
                 </div>
-                <div class="storyCard1-desc">
+            </a>
+            <div class="storyCard-titleTime" id="storyCard1-titleTime">
+                <a href="">Manchester United</a>
+            </div>
+        </div>
+
+        <!-- adContainer -->
+        <div id="adContainer">
+            <img src="./images/ad2.jpg" alt="HP ad" id="hpAd-2">
+        </div>
+
+        <!-- Story Card 2 -->
+        <div class="storyCard" id="storyCard2">
+            <a href="">
+                <div class="storyCard-img storyCard2-2-img" id="storyCard2-img">
+                    <img src="./images/1 (3).jpg" alt="Messi & DiMaria"
+                        class="storyCardImages storyCard2images storyCardimagesG2 storyCardimagesG2-2" id="main-img">
+                    <span class="triangle" id="storyCard2-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc storyCardG2-desc storyCardG2-2-desc" id="storyCard2-desc">
+                    <h3>It would be 'wonderful' to play with Messi at PSG says Di Maria</h4>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard2-titleTime">
+                <a href="">TRANSFER</a>
+            </div>
+        </div>
+
+        <!-- Story Card 3 -->
+        <div class="storyCard" id="storyCard3">
+            <a href="">
+                <div class="storyCard-img storyCard3-2-img" id="storyCard3-img">
+                    <img src="./images/1 (3).jpg" alt="Moses"
+                        class="storyCardImages storyCard3images storyCardimagesG2 storyCardimagesG2-2" id="main-img">
+                    <span class="triangle" id="storyCard3-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc storyCardG2-desc storyCardG2-2-desc" id="storyCard3-desc">
+                    <h3 id="card3-Desc">Moses scores on Spartak Moscow return</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard3-titleTime">
+                <a href="">AFRICAN ALSTARS</a>
+            </div>
+        </div>
+
+        <!-- Story Card 4 -->
+        <div class="storyCard" id="storyCard4">
+            <a href="">
+                <div class="storyCard-img storyCardG2-img" id="storyCard4-img">
+                    <img src="./images/1 (2).jpg" alt="Moses" class="storyCardImages storyCardimagesG2"
+                        id="main-img">
+                    <span class="triangle" id="storyCard4-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc storyCardG2-desc" id="storyCard4-desc">
+                    <h3 class="h3" id="card4-Desc">liverpool's bad result have been frustrating - Thiago</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard4-titleTime">
+                <a href="">LIVERPOOL</a>
+            </div>
+        </div>
+
+        <div class="storyCard" id="storyCard5">
+            <a href="">
+                <div class="storyCard-img " id="storyCard5-img">
+                    <img src="./images/1 (4).jpg" alt="Arsene Wenger & Kolo Toure"
+                        class="storyCardImages storyCardimagesG2" id="main-img">
+                    <span class="triangle" id="storyCard5-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc storyCardG2-desc" id="storyCard5-desc">
                     <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
                 </div>
-                <div class="storyCard1-titleTime">
-                    Africa Cup_ 
-                </div>
-            </div>
-
-            <!-- adContainer -->
-            <div id="adContainer">
-                <img src="images/ad2.jpg" alt="HP ad" id="hpAd-2">
-            </div>
-            <!-- storyCard2 -->
-            <div id="storyCard2">
-                <div class="storyCard2-img">
-                    <img src="images/messi_di_maria.PNG" alt="Messi & DiMaria" id="main-img">
-                </div>
-                <div class="storyCard2-desc">
-                    <h2>It would be 'wonderful' to play with Messi at PSG says Di Maria</h2>
-                </div>
-                <div class="storyCard2-titleTime">
-                    TRANSFERS
-                </div>
-            </div>
-
-            <!-- storyCard3 -->
-            <div id="storyCard3">
-                <div class="storyCard3-img">
-                    <img src="images/moses.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard3-desc">
-                    <h2>Moses scores on Spartak Moscow return</h2>
-                </div>
-                <div class="storyCard3-titleTime">
-                    AFRICAN ALL STARS
-                </div>
-            </div>
-
-            <!-- storyCard4 -->
-            <div id="storyCard4">
-                <div class=".storyCard4-9-img">
-                    <img src="images/thiago alcantara.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard4-desc">
-                    <h4>liverpool's bad result have been frustrating - Thiago</h4>
-                </div>
-                <div class="storyCard4-titleTime">
-                    LIVERPOOL
-                </div>
-            </div>
-
-            <!-- storyCard5 -->
-            <div id="storyCard5">
-                <div class=".storyCard4-9-img">
-                    <img src="images/wenger & toure.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard5-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard5-titleTime">
-                    LIVERPOOL
-                </div>
-            </div>
-
-            <!-- storyCard6 -->
-            <div id="storyCard6">
-                <div class=".storyCard4-9-img">
-                    <img src="images/thiago alcantara.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard6-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard6-titleTime">
-                    LIVERPOOL
-                </div>
-            </div>
-
-            <!-- storyCard7 -->
-            <div id="storyCard7">
-                <div class=".storyCard4-9-img">
-                    <img src="images/thiago alcantara.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard7-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard7-titleTime">
-                    ARSENAL
-                </div>
-            </div>
-
-            <!-- storyCard8 -->
-            <div id="storyCard8">
-                <div class=".storyCard4-9-img">
-                    <img src="images/eyimba.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard8-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard8-titleTime">
-                    EYIMBA
-                </div>
-            </div>
-
-            <!-- storyCard9 -->
-            <div id="storyCard9">
-                <div class=".storyCard4-9-img">
-                    <img src="images/valencia player.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard9-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard9-titleTime">
-                    LIVERPOOL
-                </div>
-            </div>
-
-            <!-- storyCard10 -->
-            <div id="storyCard10">
-                <div class=".storyCard4-9-img">
-                    <img src="images/valencia player.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard10-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard10-titleTime">
-                    LIVERPOOL
-                </div>
-            </div>
-
-            <!-- storyCard11 -->
-            <div id="storyCard11">
-                <div class=".storyCard4-9-img">
-                    <img src="images/valencia player.PNG" alt="Moses" id="main-img">
-                </div>
-                <div class="storyCard11-desc">
-                    <h4>Valencia walk off pitch in Laliga clash after racism</h4>
-                </div>
-                <div class="storyCard11-titleTime">
-                    LIVERPOOL
-                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard5-titleTime">
+                <a href="">Manchester United</a>
             </div>
         </div>
 
-        <!-- Video -->
-        <div id="videoContainer">
-            <div id="video">
-                <hr>
-                <h2 class="videoHeader">VIDEO</h2>
+        <!-- Story Card 6 -->
+        <div class="storyCard" id="storyCard6">
+            <a href="">
+                <div class="storyCard-img" id="storyCard6-img">
+                    <img src="./images/1 (4).jpg" alt="Moses" class="storyCardImages" id="storyCard9-image">
+                    <span class="triangle" id="storyCard6-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc" id="storyCard6-desc ">
+                    <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard6-titleTime">
+                <a href="">Manchester United</a>
             </div>
         </div>
-        
+
+        <!-- Story Card 7 -->
+        <div class="storyCard" id="storyCard7">
+            <a href="">
+                <div class="storyCard-img" id="storyCard7-img">
+                    <img src="./images/1 (5).jpg" alt="Bruno Albes of Manchester United" class="storyCardImages"
+                        id="storyCard9-image">
+                    <span class="triangle" id="storyCard1-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc" id="storyCard7-desc">
+                    <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard7-titleTime">
+                <a href="">Manchester United</a>
+            </div>
+        </div>
+
+        <!-- Story Card 8 -->
+        <div class="storyCard" id="storyCard8">
+            <a href="">
+                <div class="storyCard-img" id="storyCard8-img">
+                    <img src="./images/1 (6).jpg" alt="Bruno Albes of Manchester United" class="storyCardImages"
+                        id="storyCard9-image">
+                    <span class="triangle" id="storyCard1-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc " id="storyCard8-desc">
+                    <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard8-titleTime">
+                <a href="">Manchester United</a>
+            </div>
+        </div>
+
+        <!-- Story Card 9 -->
+        <div class="storyCard" id="storyCard9">
+            <a href="">
+                <div class="storyCard-img" id="storyCard9-img">
+                    <img src="./images/1 (7).jpg" alt="Bruno Albes of Manchester United" class="storyCardImages"
+                        id="storyCard9-image">
+                    <span class="triangle" id="storyCard1-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc storyCardG3-desc" id="storyCard9-desc">
+                    <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard9-titleTime">
+                <a href="">Manchester United</a>
+            </div>
+        </div>
+
+        <!-- Story Card 10 -->
+        <div class="storyCard" id="storyCard10">
+            <a href="">
+                <div class="storyCard-img" id="storyCard10-img">
+                    <img src="./images/1 (8).jpg" alt="Bruno Albes of Manchester United" class="storyCardImages"
+                        id="storyCard10-image">
+                    <span class="triangle" id="storyCard10-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc" id="storyCard10-desc">
+                    <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard10-titleTime">
+                <a href="">Manchester United</a>
+            </div>
+        </div>
+
+        <!-- Story Card 11 -->
+        <div class="storyCard" id="storyCard11">
+            <a href="">
+                <div class="storyCard-img" id="storyCard11-img">
+                    <img src="./images/1 (9).jpg" alt="Bruno Albes of Manchester United" class="storyCardImages"
+                        id="storyCard11-image">
+                    <span class="triangle" id="storyCard11-triangle"></span>
+                </div>
+            </a>
+            <a href="">
+                <div class="storyCard-desc" id="storyCard11-desc">
+                    <h3>Give it to Bruno: Fernandee digs Man Utd out of trouble again</h3>
+                </div>
+            </a>
+            <div class="storyCard-titleTime" id="storyCard11-titleTime">
+                <a href="">Manchester United</a>
+            </div>
+        </div>
+        </div>
+
     </main>
+
+    <script>
+
+        document.getElementById("openNav").onclick = function () {
+            document.getElementById("myLinks").style.display = "block";
+
+        }
+    </script>
 </body>
+
 </html>
